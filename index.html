@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бібліотека</title>
 
-    <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
     <header class="d-flex flex-column flex-md-row align-items-center px-md-5 bg-grad">
-        <nav class="">
-           
-            <button class="head-btn dropdown-toggle me-0" type="button" id="dropdownMenu2"
-                data-bs-toggle="dropdown" aria-expanded="false">
+        <nav class="text-white">
+
+            <button class="head-btn dropdown-toggle me-0" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 БІБЛІОТЕКА
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -29,17 +31,96 @@
                 <li><button class="dropdown-item text-white" type="button">Mission <br> and Vision</button></li>
                 <li><button class="dropdown-item text-white" type="button">Контакти</button></li>
             </ul>
-            <button class="text-white head-btn" href="#">ФОНДИ ТА КОЛЕКЦІЇ</button><span class="py-2 me-auto divider"></span>
-            <button class="text-white head-btn" href="#">Е-РЕСУРСИ</button><span class="py-2 divider"></span>
-            <button class="text-white head-btn" href="#">ПОСЛУГИ</button><span class="py-2 me-auto divider"></span>
-            <button class="text-white head-btn" href="#">Е-КАТАЛОГ</button>
+            <button class="head-btn" href="#">ФОНДИ ТА КОЛЕКЦІЇ</button><span class="py-2 me-auto divider"></span>
+            <button class="head-btn" href="#">Е-РЕСУРСИ</button><span class="py-2 divider"></span>
+            <button class="head-btn" href="#">ПОСЛУГИ</button><span class="py-2 me-auto divider"></span>
+            <button class="head-btn" href="#">Е-КАТАЛОГ</button>
         </nav>
     </header>
     <main>
-        <img class="img-fluid darken" src="img/15n.jpg" alt="library">
+        <div class="position-relative text-white">
+            <img class="img-fluid darken" src="img/15n.jpg" alt="library">
+            <div class="d-flex flex-row abs-pos align-items-center">
+                <img src="img/OALogo.png" alt="logo">
+                <div class="ms-4 d-flex flex-column">
+                    <span class="mb-2 cup">НАУКОВА БІБЛІОТЕКА</span>
+                    <span>НАЦІОНАЛЬНИЙ УНІВЕРСИТЕТ "ОСТРОЗЬКА АКАДЕМІЯ"</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-8">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>РОБОТА БІБЛІОТЕКИ ПІД ЧАС КАРАНТИНУ</p>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/6n.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/6n.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/6n.jpg" class="d-block w-100" alt="...">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="navigation bg-grad">
+                        <div class="container d-flex flex-column  justify-content-between text-white pt-4">
+                            <div class="pe-2 ps-2">
+                                <h4 class="text-center">НАВІГАЦІЯ ПО САЙТУ</h4>
+                                <hr class="dropdown-divider">
+
+                            </div>
+                            <div class="sb-example-3 mt-4">
+                                <!-- partial:index.partial.html -->
+                                <div class="search__container">
+
+                                    <input class="search__input" type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation bg-grad mt-5">
+                        <div class="container d-flex flex-column justify-content-between text-white pt-4">
+                            <div>
+                                <h4 class="text-center">ПОШУК ПО КАТАЛОГУ</h4>
+                                <hr class="dropdown-divider">
+                            </div>
+
+                            <div class="sb-example-3 mt-4">
+                                <!-- partial:index.partial.html -->
+                                <div class="search__container">
+
+                                    <input class="search__input" type="text" placeholder="">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <div class="sector bg-grad"></div>
-        <div class="sector"></div>
-        <div class="sector"></div>
     </main>
     <footer>
 
