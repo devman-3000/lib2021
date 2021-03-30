@@ -175,7 +175,7 @@ hr.dropdown-divider {
     background-color: #FFF;
     /* background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
 
-    background-image: url("/img/loupe.svg");
+    background-image: url("../img/loupe.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 95% center;
@@ -196,7 +196,7 @@ hr.dropdown-divider {
 .search__input:focus {
     outline: 0;
     border-bottom: 1px solid #FFF;
-    background-image: url("/img/loupe2.svg");
+    background-image: url("../img/loupe2.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 95% center;
