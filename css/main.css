@@ -3,6 +3,23 @@ a {
     text-decoration: none !important;
 }
 
+.title-align{
+    text-align:center;
+}
+
+.shad-10 {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.shad-20 {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.white-cont{
+    background-color: white;
+    border-radius: 15px;
+}
+
 .darken {
     filter: brightness(75%);
 }
@@ -19,6 +36,10 @@ a {
 
 .divider {
     border-right: 1px solid #FFF;
+}
+
+.dropdown-divider.green{
+    border-right: 1px solid #28B463;
 }
 
 /* header */
@@ -72,11 +93,7 @@ a {
 }
 
 /* main */
-.sector {
-    width: 100%;
-    height: 800px;
-    background-color: #a2df6c;
-}
+
 
 /* main>.container.mt-5 {
     margin: 5% 0 10% 3% !important;
@@ -99,6 +116,12 @@ a {
     left: 3%;
 }
 
+.abs {
+    position: absolute;
+    top: -10%;
+    right: 3%;
+}
+
 .cup {
     font-size: 32px;
     font-weight: 600;
@@ -109,11 +132,9 @@ img.d-block.w-100{
 }
 
 /*carousel*/
-.carousel-indicators {
-    margin-bottom: 0px;
-    bottom: -50px;
+.carousel-indicators{
+    position: unset;
 }
-
 .carousel-indicators>button {
     border: 1px solid #707070 !important;
     width: 7px !important;
@@ -144,10 +165,14 @@ img.d-block.w-100{
     border-radius: 15px;
 }
 
+.nav-line{
+    border-bottom: 1px solid #FFF;
+    border-width: 2px;
+    padding-bottom: 5px;
+}
 
-hr.dropdown-divider {
-    border-top: 2px solid #FFF !important;
-    opacity: unset !important;
+.nav-color-green{
+    border-bottom: 2px solid #1FB768;
 }
 
 .navigation>.container {
@@ -203,18 +228,8 @@ hr.dropdown-divider {
 }
 
 /* news */
-.main-news{
-    background-color: white;
+.main-news{    
     padding: 30px;
-    border-radius: 15px;
-}
-
-.news.container.mt-5{
-    border-radius: 15px;
-}
-
-.list-group{
-    border-radius: 15px !important;
 }
 
 .list-group>.list-group-item:nth-child(1){
@@ -225,3 +240,69 @@ hr.dropdown-divider {
     border-top-right-radius: 15px !important;
 }
 
+.sector.bg-grad>.row>.col-4>.container{
+    max-width: 70% !important;
+}
+
+.schedule {
+    padding: 10px 50px;
+}
+
+.icons>.d-flex>i{
+    font-size: 3em;
+}
+
+#youtube, #twitter, #facebook, #instagram, #telegram, .fa-instagram, .fa-instagram+span{
+    transition: 0.5s;
+    
+}
+
+#youtube:hover{
+    color: red;
+}
+#twitter:hover{
+    color:#08a0e9;
+}
+#facebook:hover{
+    color: #3b5998;
+}
+#instagram:hover .fa-instagram{
+  color: transparent;
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+#instagram:hover .fa-instagram+span{
+    color: #d6249f;
+}
+
+#telegram:hover{
+    color: #0088cc;
+}
+
+/* contacts */
+.bg-image{
+    background:
+    linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(30,178,45,0.6) 100%),
+    url(../img/odad.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bebe{
+    height:140px;
+    width:140px;
+}
+
+.fs-5.me-5{
+    margin-right: 5rem !important;
+}
+
+span.ms-5{
+    margin-left: 10rem !important;
+}
