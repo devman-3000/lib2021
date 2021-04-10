@@ -16,27 +16,52 @@
 </head>
 
 <body>
-    <header class="d-flex flex-column flex-md-row align-items-center px-md-5 bg-grad">
-        <nav class="text-white">
-
-            <button class="head-btn dropdown-toggle me-0" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                БІБЛІОТЕКА
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><button class="dropdown-item text-white" type="button">History</button></li>
-                <li><button class="dropdown-item text-white" type="button">Правила<br> користування</button></li>
-                <li><button class="dropdown-item text-white" type="button">Законодавство</button></li>
-                <li><button class="dropdown-item text-white" type="button">Рекомендації</button></li>
-                <li><button class="dropdown-item text-white" type="button">Mission <br> and Vision</button></li>
-                <li><button class="dropdown-item text-white" type="button">Контакти</button></li>
-            </ul>
-            <button class="head-btn" href="#">ФОНДИ ТА КОЛЕКЦІЇ</button><span class="py-2 me-auto divider"></span>
-            <button class="head-btn" href="#">Е-РЕСУРСИ</button><span class="py-2 divider"></span>
-            <button class="head-btn" href="#">ПОСЛУГИ</button><span class="py-2 me-auto divider"></span>
-            <button class="head-btn" href="#">Е-КАТАЛОГ</button>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-grad p-0">
+            <div class="container-fluid p-0" style="padding-left: 3% !important;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <button class="head-btn dropdown-toggle me-0" type="button" id="dropdownMenu2"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                БІБЛІОТЕКА
+                            </button>
+                            <span class="pe-2 py-2 me-auto divider"></span>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><button class="dropdown-item text-white" type="button">History</button></li>
+                                <li><button class="dropdown-item text-white" type="button">Правила<br>
+                                        користування</button></li>
+                                <li><button class="dropdown-item text-white" type="button">Законодавство</button></li>
+                                <li><button class="dropdown-item text-white" type="button">Рекомендації</button></li>
+                                <li><button class="dropdown-item text-white" type="button">Mission <br> and
+                                        Vision</button></li>
+                                <li><button class="dropdown-item text-white" type="button">Контакти</button></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <button class="head-btn ms-2" href="#">ФОНДИ ТА КОЛЕКЦІЇ</button><span class="pe-2 py-2 me-auto divider"></span>
+                        </li>
+                        <li class="nav-item">
+                            <button class="head-btn ms-2" href="#">Е-РЕСУРСИ</button><span class="pe-2 py-2 divider"></span>
+                        </li>
+                        <li class="nav-item">
+                            <button class="head-btn ms-2" href="#">ПОСЛУГИ</button><span class="pe-2 py-2 me-auto divider"></span>
+                        </li>
+                        <li class="nav-item">
+                            <button class="head-btn ms-2" href="#">Е-КАТАЛОГ</button>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
         </nav>
     </header>
+    
     <main>
         <div class="position-relative text-white">
             <img class="img-fluid darken" src="img/15n.jpg" alt="library">
@@ -52,7 +77,7 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12 col-md-8">
-                    <div class="white-cont shad-20 w-1200" style="height:470px">
+                    <div class="white-cont shad-20" style="height:460px">
 
                     </div>
                 </div>
@@ -124,22 +149,6 @@
                             </div>
                         </div>
 
-                        <!-- <div class="white-cont main-news w-1200 d-flex mt-5 justify-content-between align-items-center shad-20">
-                            <img src="img/christin-hume-mfB1B1s4sMc-unsplash.jpg" alt="" class="img-fluid"
-                                style="height:290px; width: 480px;">
-                            <div class="ps-4 d-flex flex-column justify-content-between align-self-stretch">
-                                <p class="date ms-auto m-0">15/10/2020</p>
-                                <h4 class="title">VІ науково-практична конференція «Бібліотечна справа у сучасних
-                                    інформаційно-комунікативних..."</h4>
-
-                                <p class="fs-5 m-0">28 жовтня 2020 15:00-16:30 в Zoom вебінар для редколегій та редакцій
-                                    наукових видань, що був організований 19 жовтня науковою бібліотекою КПІ.
-                                    Тема: Стратегія розвитку наукового видання.
-                                    Тези: Показники і критерії якісного видання. Технічні елементи наукових видань:
-                                    сайт, ISSN, doi. Що не ми втрачаємо? Роль, права та обов’язки, авторі, рецензентів,
-                                    членів редколегії...</p>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="news container mt-5 position-relative p-0">
                         <ul class="white-cont list-group list-group-horizontal mt-3 shad-20">
@@ -183,74 +192,236 @@
                     </div>
                 </div>
                 <div class="title col-12 col-md-4 d-flex flex-column flex-wrap">
-                    <div class="schedule container white-cont d-flex flex-column justify-content-center mt-5 shad-20">
-                        <div class="d-inline-block mt-2">
-                            <h4 class="text-center nav-line nav-color-green">РЕЖИМ РОБОТИ</h4>
+                    <div id="carouselExampleIndicators"
+                        class="carousel slide schedule container white-cont d-flex flex-column justify-content-center mt-5 shad-20"
+                        data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-inline-block mt-2">
+                                        <h4 class="text-center nav-line nav-color-green">РЕЖИМ РОБОТИ</h4>
+                                    </div>
+                                    <p class="m-0 fs-5 mb-2">
+                                        Відділ іноземної літератури
+                                    </p>
+
+                                </div>
+                                <div class="d-flex flex-column justify-content-between mt-2 fs-5">
+                                    <div class="d-flex justify-content-between pt-3">
+                                        <span>Понеділок</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Вівторок</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Середа</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Четвер</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>П'ятниця</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Субота</span>
+                                        <span class="ms-auto text-green">ВИХІДНІ</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Неділя</span>
+                                        <span class="ms-auto text-green">ВИХІДНІ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-inline-block mt-2">
+                                        <h4 class="text-center nav-line nav-color-green">РЕЖИМ РОБОТИ</h4>
+                                    </div>
+                                    <p class="m-0 fs-5 mb-2">
+                                        Відділ іноземної літератури
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column justify-content-between mt-2 fs-5">
+                                    <div class="d-flex justify-content-between pt-3">
+                                        <span>Понеділок</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Вівторок</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Середа</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Четвер</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>П'ятниця</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Субота</span>
+                                        <span class="ms-auto text-green">ВИХІДНІ</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Неділя</span>
+                                        <span class="ms-auto text-green">ВИХІДНІ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-inline-block mt-2">
+                                        <h4 class="text-center nav-line nav-color-green">РЕЖИМ РОБОТИ</h4>
+                                    </div>
+                                    <p class="m-0 fs-5 mb-2">
+                                        Відділ іноземної літератури
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column justify-content-between mt-2 fs-5">
+                                    <div class="d-flex justify-content-between pt-3">
+                                        <span>Понеділок</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Вівторок</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Середа</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Четвер</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>П'ятниця</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Субота</span>
+                                        <span class="ms-auto text-green">ВИХІДНІ</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Неділя</span>
+                                        <span class="ms-auto text-green">ВИХІДНІ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-inline-block mt-2">
+                                        <h4 class="text-center nav-line nav-color-green">РЕЖИМ РОБОТИ</h4>
+                                    </div>
+                                    <p class="m-0 fs-5 mb-2">
+                                        Відділ іноземної літератури
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column justify-content-between mt-2 fs-5">
+                                    <div class="d-flex justify-content-between pt-3">
+                                        <span>Понеділок</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Вівторок</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Середа</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Четвер</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>П'ятниця</span>
+                                        <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
+                                            14<sup>00</sup>-18<sup>00</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Субота</span>
+                                        <span class="ms-auto text-green">ВИХІДНІ</span>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between pt-2">
+                                        <span>Неділя</span>
+                                        <span class="ms-auto text-green">ВИХІДНІ</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <p class="m-0 fs-5">
-                            Відділ іноземної літератури
-                        </p>
-                        <div class="d-flex flex-column justify-content-between mt-2 fs-5">
-                            <div class="d-flex justify-content-between pt-3">
-                                <span>Понеділок</span>
-                                <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
-                                    14<sup>00</sup>-18<sup>00</span>
-                            </div>
 
-                            <div class="d-flex justify-content-between pt-2">
-                                <span>Вівторок</span>
-                                <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
-                                    14<sup>00</sup>-18<sup>00</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between pt-2">
-                                <span>Середа</span>
-                                <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
-                                    14<sup>00</sup>-18<sup>00</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between pt-2">
-                                <span>Четвер</span>
-                                <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
-                                    14<sup>00</sup>-18<sup>00</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between pt-2">
-                                <span>П'ятниця</span>
-                                <span class="ms-auto">9<sup>00</sup>-13<sup>00</sup> &nbsp;
-                                    14<sup>00</sup>-18<sup>00</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between pt-2">
-                                <span>Субота</span>
-                                <span class="ms-auto text-green">ВИХІДНІ</span>
-                            </div>
-
-                            <div class="d-flex justify-content-between pt-2">
-                                <span>Неділя</span>
-                                <span class="ms-auto text-green">ВИХІДНІ</span>
-                            </div>
-                        </div>
-
-                        <div class="carousel-indicators pt-4">
+                        <div class="carousel-indicators pt-5">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
                         </div>
                     </div>
 
-                    <div class="container title-align white-cont mt-4 shad-10">
+                    <div class="container title-align white-cont mt-5 shad-10">
                         <div class="d-inline-block pe-2 ps-2 mt-2">
                             <h4 class="text-center nav-line nav-color-green">НАШІ СОЦМЕРЕЖІ</h4>
                         </div>
-                        <div class="icons d-flex flex-row justify-content-between pt-2 pb-2">
+                        <div class="icons d-flex flex-row justify-content-between pt-3 pb-2">
                             <div id="youtube" class="d-flex flex-column justify-content-center">
                                 <i class="fab fa-youtube"></i>
                                 <span>Youtube</span>
@@ -274,8 +445,12 @@
                         </div>
 
                     </div>
+
                 </div>
+
+
             </div>
+        </div>
 
         </div>
         <div class="container pt-5 pb-5 bg-image d-flex flex-column justify-content-center ">
