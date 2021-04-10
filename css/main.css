@@ -3,6 +3,14 @@ a {
     text-decoration: none !important;
 }
 
+main>.container, footer>.container{
+    padding-left: 3% !important;
+}
+
+.schedule, .schedule+.container{
+    max-width: 70% !important;
+}
+
 .title-align {
     text-align: center;
 }
@@ -133,7 +141,7 @@ a {
 .abs {
     position: absolute;
     top: -10%;
-    right: 3%;
+    right: 0%;
 }
 
 .cup {
@@ -335,4 +343,8 @@ span.ms-5 {
 /* footer */
 .col-lg-3>.icons>.d-flex>i{
     font-size: 2.5em !important;
+}
+
+.icons-wrapper.col-lg-3{
+    max-width: 22%;
 }
