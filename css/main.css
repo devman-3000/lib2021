@@ -399,6 +399,17 @@ span.ms-5 {
     #contributors-title>span{
         margin: 0!important;
     }
+    .list-group{
+        flex-direction: column !important;
+    }
+    .list-group>.list-group-item:nth-last-child(1){
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 15px !important; 
+    }
+    .list-group>.list-group-item:nth-child(1) {
+        border-bottom-left-radius: 0 !important;
+        border-top-right-radius: 15px !important;
+    }
     .list-group+.abs{
         top: -5% !important;
         
@@ -410,6 +421,7 @@ span.ms-5 {
         margin-top: 3rem !important;
         margin-bottom: 3rem !important;
     }
+
 }
 
 @media (min-width: 768px){
