@@ -5,7 +5,11 @@ a {
 
 main>.container, footer>.container{
     padding-left: 3% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    max-width: 100% !important;
 }
+
 
 .schedule, .schedule+.container{
     max-width: 75% !important;
@@ -349,5 +353,45 @@ span.ms-5 {
 }
 
 .icons-wrapper.col-lg-3{
-    max-width: 22%;
+    margin-right: 2% !important;
+}
+
+
+/*media queries*/
+@media (min-width: 1200px) and (max-width: 1500px){
+    #schedule-wrapper>.d-flex{
+        flex-direction: column;
+        justify-content: start;
+    }
+    #schedule-wrapper>.d-flex>.ms-auto{
+        margin-left: 0% !important;
+    }
+    .schedule+.container{
+        max-width:100% !important;
+    }
+
+}
+
+@media (max-width: 1399px){
+    .schedule, .schedule+.container{
+        max-width: 40% !important;
+    }
+
+    .news.container{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+ 
+}
+
+@media (min-width: 900px){
+    #navigation-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #navigation-wrapper>.navigation{
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+    }
 }
