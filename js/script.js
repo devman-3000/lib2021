@@ -15,7 +15,7 @@ fetch("js/sample_data.json")
                 <div class="d-flex flex-column pb-3">
                     <p class="date ms-auto m-0">${item.date}</p>
                     <h4 class="title">${item.title}</h4>
-                    <p class="m-0">
+                    <p class="m-0 newstext">
                         ${item.description}
                     </p>
                 </div>
@@ -24,16 +24,16 @@ fetch("js/sample_data.json")
         })
         main_news_wrapper.innerHTML =
             `
-        <div class="white-cont card mt-5 p-4">
+        <div class="white-cont card mt-5 p-2">
             <div class="row g-0">
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
                     <img class="img-fluid" src=${data.main_news[0]["img"]}
-                        style="height:290px; width: 480px;" alt="...">
+                        style="height:306px; width: 480px; border-radius: 15px;" alt="...">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7">
                     <div class="card-body d-flex flex-column">
                         <p class="date ms-auto">${data.main_news[0]["date"]}</p>
-                            <h4 class="title mb-4">${data.main_news[0]["title"]}</h4>
+                            <h4 class="title mb-3">${data.main_news[0]["title"]}</h4>
                             <p class="fs-5 m-0">${data.main_news[0]["description"]}</p>
                     </div>
                 </div>

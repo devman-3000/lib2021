@@ -1,4 +1,18 @@
 /* global Xddd*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: "Montserrat";
+}
+
+/*Text style global*/
+h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -20,7 +34,7 @@ main>.container, footer>.container{
 }
 
 .shad-10 {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
 .shad-20 {
@@ -33,7 +47,7 @@ main>.container, footer>.container{
 }
 
 .darken {
-    filter: brightness(75%);
+    filter: brightness(60%);
 }
 
 .h-800 {
@@ -72,6 +86,7 @@ main>.container, footer>.container{
 }
 
 .head-btn {
+    font-size: 18px;
     background-color: transparent;
     text-decoration: none;
     padding: 20px;
@@ -89,6 +104,7 @@ main>.container, footer>.container{
 }
 
 .dropdown-menu {
+    font-size: 18px;
     /* list-style-type: disc !important;
     padding-left:1em !important;
     margin-left:1em; */
@@ -137,6 +153,11 @@ main>.container, footer>.container{
 .container.mt-5>.row>.col-4 {
     padding-left: 3% !important;
 }
+/*logo*/
+img.logologo{
+    height: 135px;
+    filter: invert(100%);
+}
 
 /*text over image*/
 .abs-pos {
@@ -151,9 +172,14 @@ main>.container, footer>.container{
     right: 0%;
 }
 
-.cup {
-    font-size: 32px;
+.logotext1 {
+    font-size: 44px;
     font-weight: 600;
+}
+
+.logotext2 {
+    font-size: 32px;
+    font-weight: 400;
 }
 
 img.d-block.w-100 {
@@ -258,10 +284,16 @@ img.d-block.w-100 {
 }
 
 /* news */
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
 .main-news {
     padding: 30px;
 }
-
+.newstext{
+    font-size: 18px;
+}
 .list-group>.list-group-item:nth-child(1) {
     border-bottom-left-radius: 15px !important;
 }
@@ -273,11 +305,21 @@ img.d-block.w-100 {
 .sector.bg-grad>.row>.col-4>.container {
     max-width: 70% !important;
 }
-
+.more{
+    font-size: 18px;
+}
+/*Schedule*/
 .schedule {
+    font-weight: 400;
     padding: 10px 50px;
 }
 
+/*Socials*/
+.socials{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px;
+}
 .icons>.d-flex>i {
     font-size: 3em;
 }
@@ -289,7 +331,7 @@ img.d-block.w-100 {
 #telegram,
 .fa-instagram,
 .fa-instagram+span {
-    transition: 0.5s;
+    transition: 0.3s;
 
 }
 
@@ -333,7 +375,14 @@ img.d-block.w-100 {
     -o-background-size: cover;
     background-size: cover;
 }
-
+.card-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-text{
+    font-size: 18px;
+    font-weight: 500;
+}
 .bebe {
     height: 140px;
     width: 140px;
