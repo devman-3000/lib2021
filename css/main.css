@@ -115,7 +115,7 @@ main>.container, footer>.container{
     backdrop-filter: blur(15px) !important;
 
     left: 3% !important;
-    top: 62px !important;
+    top: 64px !important;
     border-top: none !important;
     border-left: 1px solid #FFF !important;
     border-right: 1px solid #FFF !important;
@@ -158,6 +158,7 @@ img.logologo{
     height: 135px;
     filter: invert(100%);
 }
+
 
 /*text over image*/
 .abs-pos {
@@ -404,6 +405,35 @@ span.ms-5 {
 .icons-wrapper.col-lg-3{
     margin-right: 2% !important;
 }
+@media(max-width:375px){
+    .icons{
+        flex-direction: column !important;
+    }
+    .list-group+.abs{
+        top: -2% !important;
+    }
+    img.logologo{
+        height: 45px;
+        filter: invert(100%);
+    }
+    
+    .logotext1 {
+        font-size: 0.8em !important;
+        font-weight: 600;
+    }
+    
+    .logotext2 {
+        font-size: 0.7em !important;
+        font-weight: 400;
+    }
+    section.mb-4.be-4{
+        flex-direction: column !important;
+    }
+    span.divider{
+        visibility: hidden !important;
+    }
+    
+}
 
 @media(max-width:578px){
     .schedule, .schedule+.container{
@@ -442,6 +472,21 @@ span.ms-5 {
     #contributors-title>span{
         margin: 0!important;
     }
+
+    img.logologo{
+        height: 65px;
+        filter: invert(100%);
+    }
+    
+    .logotext1 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+    
+    .logotext2 {
+        font-size: 1em;
+        font-weight: 400;
+    }
 }
 
 @media (min-width:578px) and (max-width:768px){
@@ -469,6 +514,21 @@ span.ms-5 {
     #navigation-wrapper>.navigation{
         margin-top: 3rem !important;
         margin-bottom: 3rem !important;
+    }
+
+    img.logologo{
+        height: 100px;
+        filter: invert(100%);
+    }
+    
+    .logotext1 {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    
+    .logotext2 {
+        font-size: 2em;
+        font-weight: 400;
     }
 
 }
@@ -509,6 +569,7 @@ span.ms-5 {
     #navigation-wrapper>.navigation:nth-child(1){
         margin-top: 0 !important;
     }
+    
 }
 
 @media (min-width:1300px){
