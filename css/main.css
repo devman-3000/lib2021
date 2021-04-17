@@ -34,7 +34,7 @@ main>.container, footer>.container{
 }
 
 .shad-10 {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    
 }
 
 .shad-20 {
@@ -201,8 +201,13 @@ img.d-block.w-100 {
 
 /*carousel*/
 .carousel-indicators {
-    position: unset;
+    margin-bottom: 0px;
+    bottom: -50px;
 }
+.title>.carousel>.carousel-indicators{
+    position: unset !important;
+}
+
 
 .carousel-indicators>button {
     border: 1px solid #707070 !important;
@@ -315,7 +320,7 @@ img.d-block.w-100 {
     border-top-right-radius: 15px !important;
 }
 
-.sector.bg-grad>.row>.col-4>.container {
+.sector.bg-grad>.row>.col-4>.container, .dop-res {
     max-width: 70% !important;
 }
 .more{
@@ -409,6 +414,36 @@ span.ms-5 {
     margin-left: 10rem !important;
 }
 
+/*additional resources*/
+.dop-res{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.res-item{
+    display: block;
+    width: 100%;
+    padding: 0.9rem 0;
+    font-size: 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    transition: 1s ease-out;
+}
+.res-item>i{
+    font-size: 2rem !important;
+}
+
+.res-item:hover{
+    background-color: #28B463;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    color: #fff !important;
+}
+
 /* footer */
 .icons-wrapper>.icons>.d-flex>i{
     font-size: 2em !important;
@@ -451,6 +486,9 @@ span.ms-5 {
     .schedule, .schedule+.container{
         max-width: 100% !important;
 
+    }
+    .dop-res{
+        max-width: 100% !important;
     }
     #schedule-wrapper>.d-flex{
         flex-direction: column;
