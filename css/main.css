@@ -416,8 +416,12 @@ span.ms-5 {
 
 /*additional resources*/
 .dop-res{
+    font-size: 18px;
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+.dop-res h4{
+    padding-top: 10px;
 }
 .res-item{
     display: block;
@@ -432,7 +436,7 @@ span.ms-5 {
     white-space: nowrap;
     background-color: transparent;
     border: 0;
-    transition: 1s ease-out;
+    transition: 0.3s ease-out;
 }
 .res-item>i{
     font-size: 2rem !important;
