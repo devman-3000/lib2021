@@ -204,7 +204,7 @@ img.d-block.w-100 {
     margin-bottom: 0px;
     bottom: -50px;
 }
-.title>.carousel>.carousel-indicators{
+#car-ind2{
     position: unset !important;
 }
 
@@ -407,7 +407,7 @@ img.d-block.w-100 {
 }
 
 .fs-5.me-5 {
-    margin-right: 5rem !important;
+    margin-right: 6rem !important;
 }
 
 span.ms-5 {
