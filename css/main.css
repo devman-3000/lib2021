@@ -9,9 +9,25 @@ body{
 
 /*Text style global*/
 h4{
-    font-size: 20px;
     font-weight: 600;
+    font-size: 1.4rem !important;
 }
+.title{
+    font-size:1.2rem !important;
+    transition: 0.5s;
+}
+.title:hover{
+    color: #28B463;
+}
+a.text-white{
+    transition: 0.5s;
+}
+.d-inline-flex>a.text-white:hover{
+    color: #A6A6A6 !important;
+}
+/* .title + p{
+    font-size: 1.2rem !important
+} */
 
 a {
     text-decoration: none !important;
@@ -87,6 +103,9 @@ main>.container, footer>.container{
 
 .text-grey{
     color: #A6A6A6 !important;
+}
+.link-secondary {
+    color: #6E6E6E;
 }
 
 .text-dark-grey {
@@ -302,15 +321,18 @@ img.d-block.w-100 {
 }
 
 /* news */
-.title{
+/* .title{
     font-size: 20px;
     font-weight: 600;
-}
+} */
 .main-news {
     padding: 30px;
 }
 .newstext{
     font-size: 18px;
+}
+.list-group-item{
+    padding: 1rem !important;
 }
 .list-group>.list-group-item:nth-child(1) {
     border-bottom-left-radius: 15px !important;
@@ -338,8 +360,8 @@ img.d-block.w-100 {
     font-weight: 400;
     padding: 8px;
 }
-.icons>.d-flex>i {
-    font-size: 2.5em;
+.icons>a>i {
+    font-size: 3em;
 }
 
 #youtube,
@@ -350,6 +372,7 @@ img.d-block.w-100 {
 .fa-instagram,
 .fa-instagram+span {
     transition: 0.3s;
+    
 
 }
 
@@ -401,6 +424,9 @@ img.d-block.w-100 {
     font-size: 18px;
     font-weight: 500;
 }
+.card-text.text-muted{
+    font-size: 1rem;
+}
 .bebe {
     height: 140px;
     width: 140px;
@@ -427,7 +453,7 @@ span.ms-5 {
     display: block;
     width: 100%;
     padding: 0.9rem 0;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     clear: both;
     font-weight: 400;
     color: #212529;
@@ -457,14 +483,25 @@ span.ms-5 {
     margin-right: 2% !important;
 }
 @media(max-width:375px){
-    .icons{
+    #contributors-title{
         flex-direction: column !important;
     }
+   
     .list-group+.abs{
         top: -2% !important;
     }
+
+    section.mb-4.be-4{
+        flex-direction: column !important;
+    }
+    span.divider{
+        visibility: hidden !important;
+    }
+    
+}
+@media(max-width:578px) {
     img.logologo{
-        height: 45px;
+        height: 45px !important;
         filter: invert(100%);
     }
     
@@ -477,12 +514,33 @@ span.ms-5 {
         font-size: 0.7em !important;
         font-weight: 400;
     }
-    section.mb-4.be-4{
-        flex-direction: column !important;
+
+    #contributors-title>a{
+        margin-left: auto !important;
     }
-    span.divider{
-        visibility: hidden !important;
+    .dop-res{
+        margin-top: 2rem !important;
     }
+    .col-6.col-lg-3.mb-4{
+        padding-left: 0!important;
+    }
+    .socials {
+        margin-top: 2rem !important;
+    }
+
+    section.d-flex{
+        flex-direction: column-reverse !important;
+
+    }
+    section.d-flex>.ms-auto{
+        margin-left: 0 !important;
+    }
+    section.d-flex>.d-flex{
+        margin-top: 2rem !important;
+    }
+    .icons-wrapper > .icons > a > i{
+        font-size: 2.5rem !important;
+    }  
     
 }
 @media(min-width:578px){
@@ -622,12 +680,27 @@ span.ms-5 {
     .contrib-wrapper{
         padding: 2rem !important
     }
+    .socials {
+        margin-top: 2rem !important;
+    }
+    #contrib-wrapper>.col>.white-cont{
+        padding: 1.5rem !important;
+    }
+    /* .icons-wrapper{
+        width: 40%;
+        margin-left: auto !important;
+    } */
+    .icons.text-dark-grey{
+        justify-content: space-between !important;
+        margin-top: 1rem !important;
+    }
 }
 @media (max-width:992px){
     .navbar>.container-fluid{
         padding-left: 0 !important;
     }
-    .navbar-collapse.collapse.show>ul>li>button{
+    
+    .navbar-collapse.collapsing>ul>li>button, .navbar-collapse.collapse.show>ul>li>button{
         width: 100% !important;
         margin: 0 !important;
         font-size: 1em;
@@ -674,6 +747,10 @@ span.ms-5 {
         margin-top: 0 !important;
     }
 
+    .socials {
+        margin-top: 2rem !important;
+    }
+
     .schedule, .schedule+.container{
         max-width: 40% !important;
     }
@@ -700,6 +777,10 @@ span.ms-5 {
     
     #navigation-wrapper>.navigation:nth-child(1){
         margin-top: 0 !important;
+    }
+
+    .socials {
+        margin-top: auto !important;
     }
     
 }
