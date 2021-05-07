@@ -177,7 +177,7 @@ img.logo {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 90px);
-    grid-template-rows: repeat(9, 50px);
+    grid-template-rows: repeat(9, 47px);
     
     gap: 10px;
 }
