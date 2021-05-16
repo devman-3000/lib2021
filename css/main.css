@@ -178,7 +178,7 @@ img.logo {
 /*grid box*/
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(12, 90px);
+    grid-template-columns: repeat(12, 8.32%);
     grid-template-rows: repeat(9, 47px);
     
     gap: 10px;
@@ -194,16 +194,24 @@ img.logo {
 /* box */
 #e-rep,
 #e-rep+span {
-    fill: #445E9B;
-    color: #445E9B;
+    fill: white;
+    color: white;
+
+    /* fill: #445E9B;
+    color: #445E9B; */
     transition: 0.5s;
 }
 .e-rep-box:hover a #e-rep,
 .e-rep-box:hover a #e-rep+span {
-    fill: white;
-    color: white;
+    fill: #445E9B;
+    color: #445E9B;
+
+    /* fill: white;
+    color: white; */
 }
 .e-rep-box {
+    background-color: #445E9B;
+
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -212,27 +220,40 @@ img.logo {
     transition: 0.5s;
 }
 .e-rep-box:hover {
-    background-color: #445E9B;
+    background-color: #fff;
+
 }
 
 /* box */
 #pro,
 #litpro+span {
-    color: #ec854a;
-    fill: #ec854a;
+    fill: #fff;
+    color: #fff;
+
+    /* color: #ec854a;
+    fill: #ec854a; */
     transition: 0.5s;
 }
 #lit {
-    fill: #434140;
+    fill: #fff;
+
+    /* fill: #434140; */
     transition: 0.5s;
 }
 .litpro-box:hover a #pro,
-.litpro-box:hover a #lit,
 .litpro-box:hover a #litpro+span {
-    fill: #fff;
-    color: #fff;
+    color: #ec854a;
+    fill: #ec854a;
+    /* fill: #fff;
+    color: #fff; */
 }
+.litpro-box:hover a #lit{
+    fill: #434140;
+}
+
 .litpro-box {
+    background-color: #ec854a;
+
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -241,23 +262,30 @@ img.logo {
     transition: 0.5s;
 }
 .litpro-box:hover {
-    background-color: #ec854a;
-
+    background-color: #fff;    
 }
 
 /* box */
 #moodle,
 #moodle+span {
-    fill: #F3B462;
-    color: #F3B462;
+    fill: #FFF;
+    color: #FFF;
+
+    /* fill: #F3B462;
+    color: #F3B462; */
     transition: 0.5s;
 }
 .moodle-box:hover a #moodle,
 .moodle-box:hover a #moodle+span{
-    fill: #FFF;
-    color: #FFF;
+    fill: #F3B462;
+    color: #F3B462;
+    
+    /* fill: #FFF;
+    color: #FFF; */
 }
 .moodle-box {
+    background-color: #F3B462;
+
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 1;
@@ -266,21 +294,29 @@ img.logo {
     transition: 0.5s;
 }
 .moodle-box:hover{
-    background-color: #F3B462;
+    background-color: #FFF;
 }
 
 /* box */
 #clayrite, #clayrite+span{
-    fill: #624794;
-    color: #624794;
+    fill: #FFFF;
+    color: #FFFF;
+
+    /* fill: #624794;
+    color: #624794; */
     transition: 0.5s;
 }
 .clayrite-box:hover a #clayrite, 
 .clayrite-box:hover a #clayrite+span{
-    fill: #FFFF;
-    color: #FFFF;
+    fill: #624794;
+    color: #624794;
+    
+    /* fill: #FFFF;
+    color: #FFFF; */
 }
 .clayrite-box {
+    background-color: #624794;
+
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 5;
@@ -289,21 +325,29 @@ img.logo {
     transition: 0.5s;
 }
 .clayrite-box:hover{
-    background-color: #624794;
+    background-color: #FFF;
 }
 
 /* box */
 #speak, #speak+span{
-    fill: #279A52;
-    color: #279A52;
+    fill: #fff;
+    color: #fff;
+
+    /* fill: #279A52;
+    color: #279A52; */
     transition: 0.5s;
 }
 .speak-box:hover a #speak, 
 .speak-box:hover a #speak+span{
-    fill: #fff;
-    color: #fff;
+    fill: #279A52;
+    color: #279A52;
+    
+    /* fill: #fff;
+    color: #fff; */
 }
 .speak-box {
+    background-color: #279A52;
+
     
     grid-column-start: 4;
     grid-column-end: 6;
@@ -313,21 +357,28 @@ img.logo {
     transition: 0.5s;
 }
 .speak-box:hover{
-    background-color: #279A52;
+    background-color: #FFF;
 }
 
 /* box */
 #academic, #academic+span{
-    fill: #86C63C;
-    color: #86C63C;
+    fill: #fff;
+    color: #fff;
+
+    /* fill: #86C63C;
+    color: #86C63C; */
     transition: 0.5s;
 }
 .academic-box:hover a #academic, 
 .academic-box:hover a #academic+span{
-    fill: #fff;
-    color: #fff;
+    fill: #86C63C;
+    color: #86C63C;
+    
+    /* fill: #fff;
+    color: #fff; */
 }
 .academic-box {
+    background-color: #86C63C;
     
     grid-column-start: 4;
     grid-column-end: 6;
@@ -337,19 +388,23 @@ img.logo {
     transition: 0.5s;
 }
 .academic-box:hover{
-    background-color: #86C63C;
+    background-color: #FFF;
 }
 
 /* box */
 #scopus, #scopus+span{
-    color: #F88476;
+    color: #fff;
+
     transition: 0.5s;
 }
 .scopus-box:hover a #scopus, 
 .scopus-box:hover a #scopus+span{
-    color: #fff;
+    color: #F88476;
+
 }
 .scopus-box {
+    background-color: #F88476;
+
     grid-column-start: 6;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -358,21 +413,29 @@ img.logo {
     transition: 0.5s;
 }
 .scopus-box:hover{
-    background-color: #F88476;
+    background-color: #FFF;
 }
 
 /* box */
 #qa, #qa+span{
-    fill: #DF6470;
-    color: #DF6470;
+    fill: #fff;
+    color: #fff;
+
+    /* fill: #DF6470;
+    color: #DF6470; */
     transition: 0.5s;
 }
 .qa-box:hover a #qa, 
 .qa-box:hover a #qa+span{
-    fill: #fff;
-    color: #fff;
+    fill: #DF6470;
+    color: #DF6470;
+
+    /* fill: #fff;
+    color: #fff; */
 }
 .qa-box {
+    background-color: #DF6470;
+
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 1;
@@ -381,18 +444,23 @@ img.logo {
     transition: 0.5s;
 }
 .qa-box:hover{
-    background-color: #DF6470;
-    
+    background-color: #FFF;   
 }
 
 /* box */
 .litpro2-box:hover a #pro,
-.litpro2-box:hover a #lit,
 .litpro2-box:hover a #litpro+span {
-    fill: #fff;
-    color: #fff;
+    color: #ec854a;
+    fill: #ec854a;
+    /* fill: #fff;
+    color: #fff; */
+}
+.litpro2-box:hover a #lit{
+    fill: #434140;
 }
 .litpro2-box {
+    background-color: #EC854A;
+
     grid-column-start: 10;
     grid-column-end: 12;
     grid-row-start: 1;
@@ -401,21 +469,29 @@ img.logo {
     transition: 0.5s;
 }
 .litpro2-box:hover {
-    background-color: #EC854A;
+    background-color: #FFF;
 }
 
 /* box */
 #koha, #koha+span{
-    fill: #5BAE4E;
-    color: #5BAE4E;
+    fill: #fff;
+    color: #fff;
+
+    /* fill: #5BAE4E;
+    color: #5BAE4E; */
     transition: 0.5s;
 }
 .koha-box:hover a #koha, 
 .koha-box:hover a #koha+span{
-    fill: #fff;
-    color: #fff;
+    fill: #5BAE4E;
+    color: #5BAE4E;
+
+    /* fill: #fff;
+    color: #fff; */
 }
 .koha-box {
+    background-color: #5BAE4E;
+
     grid-column-start: 10;
     grid-column-end: 12;
     grid-row-start: 3;
@@ -424,21 +500,29 @@ img.logo {
     transition: 0.5s;
 }
 .koha-box:hover{
-    background-color: #5BAE4E;
+    background-color: #FFF;
 }
 
 /* box */
 #springer, #springer+span{
-    fill: #253465;
-    color: #253465;
+    fill: #fff;
+    color: #fff;
+
+    /* fill: #253465;
+    color: #253465; */
     transition: 0.5s;
 }
 .springer-box:hover a #springer, 
 .springer-box:hover a #springer+span{
-    fill: #fff;
-    color: #fff;
+    fill: #253465;
+    color: #253465;
+
+    /* fill: #fff;
+    color: #fff; */
 }
 .springer-box {
+    background: #253465;
+
     grid-column-start: 6;
     grid-column-end: 10;
     grid-row-start: 5;
@@ -447,22 +531,30 @@ img.logo {
     transition: 0.5s;
 }
 .springer-box:hover{
-    background: #253465;
+    background: #FFF;
     
 }
 
 /* box */
 #music, #music+span{
-    fill: #69A9D9;
-    color: #69A9D9;
+    fill: #fff;
+    color: #fff;
+
+    /* fill: #69A9D9;
+    color: #69A9D9; */
     transition: 0.5s;
 }
 .music-box:hover a #music, 
 .music-box:hover a #music+span{
-    fill: #fff;
-    color: #fff;
+    fill: #69A9D9;
+    color: #69A9D9;
+
+    /* fill: #fff;
+    color: #fff; */
 }
 .music-box {
+    background-color: #69A9D9;
+
     grid-column-start: 10;
     grid-column-end: 12;
     grid-row-start: 5;
@@ -471,7 +563,7 @@ img.logo {
     transition: 0.5s;
 }
 .music-box:hover{
-    background-color: #69A9D9;
+    background-color: #FFF;
     
 }
 
