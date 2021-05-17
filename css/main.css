@@ -406,7 +406,7 @@ img.logo {
     background-color: #F88476;
 
     grid-column-start: 6;
-    grid-column-end: 7;
+    grid-column-end: 8;
     grid-row-start: 1;
     grid-row-end: 5;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -436,7 +436,7 @@ img.logo {
 .qa-box {
     background-color: #DF6470;
 
-    grid-column-start: 7;
+    grid-column-start: 8;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 5;
@@ -797,7 +797,7 @@ img.logo {
 
 /*additional resources*/
 .dop-res {
-    max-width: 70% !important;
+    max-width: 75% !important;
     font-size: 18px;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -1360,8 +1360,12 @@ a.text-white {
 
     .schedule,
     .schedule+.container {
-        max-width: 90% !important;
+        max-width: 80% !important;
 
+    }
+
+    .dop-res{
+        max-width:80% !important;
     }
 
     .dop-res {
