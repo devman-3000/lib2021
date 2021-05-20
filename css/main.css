@@ -101,7 +101,14 @@ footer>.container {
     border: 0px;
     margin-right: 4px;
 }
-
+.head-btn a{
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.4s;
+}
+.head-btn:hover a{
+    color: #28B463 !important;
+}
 .head-btn:hover,
 .head-btn.show {
     background-color: #FFF;
@@ -1448,3 +1455,15 @@ a.text-white {
 
     }
 }
+
+
+.accordion-button>a, .accordion-body>p>a{
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.accordion-button>a:hover, .accordion-body>p>a:hover{
+    color:#279A52;
+}
+
+
