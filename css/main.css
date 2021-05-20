@@ -1333,7 +1333,7 @@ a.text-white {
 
 @media (min-width:1300px) {
     #navigation-wrapper>.navigation {
-        width: 400px;
+        width: 75%;
     }
 
     .e-rep-box, .litpro-box, .moodle-box, .clayrite-box, .speak-box, .academic-box, .scopus-box, .qa-box, .litpro2-box, .koha-box, .springer-box, .music-box{
@@ -1364,11 +1364,10 @@ a.text-white {
 
     }
 
-    .dop-res{
-        max-width:80% !important;
-    }
-
+    
+    
     .dop-res {
+        max-width:75% !important;
         margin-top: 0rem !important;
     }
 
