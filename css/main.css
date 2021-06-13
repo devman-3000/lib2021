@@ -1474,7 +1474,7 @@ a.text-white {
 }
 
 .parallax{
-    width: 1920px;
+    width: 100%;
     height: 576px;
     position: relative;
     overflow: hidden;
@@ -1491,14 +1491,15 @@ a.text-white {
     
   }
   .parallax-layer__1{
-    background-image: url("../img/lib.jpg");
+    background-image: url("../img/IMG_6348.JPG");
     background-size: cover;
     max-width: 100%;
     max-height: auto;
-    filter: brightness(60%);
-    transform: scaleX(-1);
-  }
-  .parallax-layer__2{
+    filter: brightness(90%);
+    }
+  /* .parallax-layer__2{
     background-image: url("../img/wtf.png");
     filter: brightness(60%);
-  }
+    max-width: 100%;
+    max-height: auto;
+  } */
