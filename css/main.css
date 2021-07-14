@@ -186,7 +186,7 @@ img.logo {
 /*grid box*/
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(12, 8.32%);
+    grid-template-columns: repeat(12, calc(100%/12));
     grid-template-rows: repeat(9, 47px);
     
     gap: 10px;
@@ -1481,22 +1481,22 @@ a.text-white {
   }
   .parallax-layer{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: -2%;
+    left: -20%;
+    width: 120%;
+    height: 102%;
     background-position: center;
-      background-repeat: no-repeat;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     
   }
   .parallax-layer__1{
     background-image: url("../img/IMG_6348.JPG");
     background-size: cover;
-    max-width: 100%;
-    max-height: auto;
+    max-width: 120%;
+    max-height: 120%;
     filter: brightness(90%);
-    }
+}
   /* .parallax-layer__2{
     background-image: url("../img/wtf.png");
     filter: brightness(60%);
